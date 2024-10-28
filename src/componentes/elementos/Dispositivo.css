@@ -1,0 +1,115 @@
+.dispositivo {
+  position: relative;
+  border: 15px white solid;
+  margin: auto;
+  width: 150px;
+  height: 280px;
+  border-top-width: 30px;
+  border-bottom-width: 40px;
+  border-radius: 32px;
+
+  background-color: white;
+}
+
+.dispositivo:before {
+  content: "";
+  display: block;
+  background: green;
+  border: 10px solid white;
+  width: 7px;
+  height: 7px;
+  border-radius: 20px;
+  top: -16px;
+  left: 42%;
+  position: absolute;
+}
+
+.dispositivo:after {
+  content: "";
+  display: block;
+  background: green;
+  width: 65px;
+  height: 6px;
+  border-radius: 4px;
+  left: 28%;
+  bottom: -23px;
+  position: absolute;
+}
+.dispositivo > .contenido {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 280px;
+  background-image: linear-gradient(black, green);
+  border-radius: 10px;
+  align-content: flex-end;
+}
+
+.dispositivo > .contenido > img {
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .dispositivo {
+    position: relative;
+    border: 15px white solid;
+    margin: auto;
+    width: 220px;
+    height: 120px;
+    border-left-width: 30px;
+    border-right-width: 40px;
+    border-radius: 32px;
+
+    background-color: white;
+  }
+
+  .dispositivo:before {
+    content: "";
+    display: none;
+    background: green;
+    border: 10px solid white;
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    top: -13px;
+    left: 46%;
+    position: absolute;
+  }
+
+  .dispositivo:after {
+    content: "";
+    display: block;
+    background: green;
+    width: 65px;
+    height: 6px;
+    border-radius: 4px;
+    left: 40%;
+    bottom: -10px;
+    position: absolute;
+  }
+  .dispositivo > .contenido {
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 120px;
+    background-image: linear-gradient(black, green);
+    border-radius: 10px;
+    align-content: flex-end;
+  }
+
+  .dispositivo > .contenido > img {
+    width: 70px;
+    height: 120px;
+    margin-top: 3px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+}

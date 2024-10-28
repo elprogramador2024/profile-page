@@ -1,0 +1,66 @@
+.inicio {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+
+  background-color: #00bc75;
+}
+
+.inicio__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.inicio__icono {
+  border-radius: 10px;
+}
+
+.inicio__icono:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .inicio__row {
+    flex-direction: column;
+  }
+  .inicio__redes > .inicio__icono {
+    width: 40px; /*al final toco por width en vez de font-size*/
+  }
+}
+.inicio__contenedorUno {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding: 10px 30px;
+}
+
+.inicio__contenedorUno > h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.inicio__contenedorUno > h2 {
+  margin-bottom: 5px;
+}
+
+.inicio__contenedorUno > p {
+  border-bottom: 1px solid lightgray;
+}
+
+.inicio__redes > .inicio__icono {
+  font-size: 3.8rem;
+  padding: 5px 13px;
+}
+
+.inicio__contenedorDos {
+  padding: 10px 30px;
+}
+
+.inicio__contenedorDos > img {
+  width: 300px;
+}

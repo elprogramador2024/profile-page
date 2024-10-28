@@ -1,0 +1,85 @@
+.proyectos {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  padding-top: 50px;
+}
+
+.proyectos__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.proyectos__tarjeta {
+  flex: 1 0 41%;
+  background-color: lightgray;
+  text-align: center;
+  border: 1px solid lightgray;
+  margin: 30px 20px;
+  padding-top: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+
+.proyectos__tarjeta > .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.proyectos__tarjeta > .badge > img {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.proyectos__tarjeta > img {
+  width: 250px;
+  object-fit: contain;
+}
+
+.proyectos__tarjeta > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.proyectos__tarjetaCuerpo {
+  border-top: 1px solid lightgray;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.proyectos__tarjetaCuerpo > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  color: gray;
+}
+
+.proyectos__container > h2 {
+  margin-top: 30px;
+  margin-left: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .proyectos__row {
+    flex-direction: column;
+  }
+  .proyectos__container > h2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+}

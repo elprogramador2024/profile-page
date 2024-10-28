@@ -1,0 +1,98 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #00db89;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  color: white;
+}
+.header__icono {
+  background-color: #00bc75;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.header__option {
+  display: flex;
+
+  /*padding-left: 15px;
+  padding-right: 15px;*/
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.header__option:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.header__option > button {
+  background-color: #e9f503;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  border: white 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header__menuMovil {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__navbar {
+    display: none;
+    right: 0;
+    top: 45px;
+    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    padding: 15px 10px;
+    background-image: linear-gradient(#00db89, #00bc75);
+
+    min-width: 160px;
+  }
+  .header__option {
+    display: flex;
+    padding: 6px 15px;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .header__menuMovil {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .header__menuMovil > button {
+    background-color: #00db89;
+    color: white;
+    border: 0;
+  }
+}
